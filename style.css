@@ -1,0 +1,494 @@
+/* Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f6f4;
+    background-image: url(../proyecto/img-index/WhatsApp\ Image\ 2023-04-05\ at\ 00.40.53.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Unidad de medida gral para el proyecto*/
+html {
+    font-size: 20px;
+}
+
+/* Cabecera de la Web */
+/* Logo*/
+h1 {
+    text-align: center;
+    color:black;
+    text-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+/* Menu navegable */
+.first-menu {
+    
+    display: flex;
+    
+    list-style: none;
+} 
+
+.first-menu li {
+    margin: 5px 10px 20px 10px;
+    height: 15%;
+}
+
+/* .second-menu, li{
+    color: black;
+    text-shadow: 0 0 8px rgb(255, 255, 255);
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+    list-style: none;
+} */ */
+/* Fin menu navegable */
+
+/* Seccion Carrucel */
+/* Medidas Imagen Principal */
+.carrusel,img {
+    position: relative ;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+.frase {
+    color: #f7f6f4;
+    /* font-family: 'Montserrat',sans-serif; */
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    text-shadow: 0 0 8px rgb(255, 255, 255); 
+}
+ /* Fin Carrucel */
+
+/* GALERIA*/
+
+.galeria {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.galeria h1 {
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-weight: 300;
+}
+
+.linea {
+    
+}
+
+.contenedor-imagenes{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+
+}
+
+.imagen img{
+    widht:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: none;
+    width: 100%;
+    transition: .5s ease;
+    overflow: hidden;
+}
+
+.overlay h2 {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+}
+
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .contenedor-imagenes {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contenedor-imagenes {
+        width: 90%;
+    }
+    .contenedor-imagenes .imagen {
+        width: 48%;
+    }
+}
+
+
+
+/* Pie de pagina */
+
+/* Seccion redes */
+
+#contenedor-footer {
+    background-color: rgb(172,167,167);
+    padding: 0;
+}
+
+
+
+
+
+
+.redes{
+    background-color: rgb(172, 167, 167);
+}
+.redes p  {
+    color: rgb(82, 80, 80);
+    font-weight: bold;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.redes li {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15px;
+    margin-right: 10px;
+    list-style-type: none; 
+}
+
+/* Seccion ayuda */
+.ayuda {
+    text-align: left;
+    margin-left: 280px;
+    margin-top: -90px;  
+}
+
+.ayuda p {
+    color: rgb(82, 80, 80);
+    font-weight: bold; 
+}
+
+.ayuda li {
+    display: flex;
+    flex-direction: column;
+    margin-left: -50px;
+    list-style-type: none; 
+}
+
+.ayuda a {
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+
+/* Seccion Logo */
+.logo {
+    color: rgb(82, 80, 80);
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(172, 167, 167);
+    margin-bottom: 20px;
+}
+
+/* Seccion Nosotros */
+.nosotros {
+    background-color: rgb(172, 167, 167);
+    margin-left: 10px;
+    text-align: right;
+    margin-top: -130px;
+}
+
+.nosotros p {
+    color: rgb(82, 80, 80);
+    font-weight: bold;
+    margin-right: 60px;
+}
+.nosotros li {
+    display: flex;
+    justify-content: flex-end;
+    text-align: justify;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.nosotros a {
+    color: rgb(110, 110, 110);
+    text-decoration: none;
+}
+
+
+/* Pagina de Registro */
+
+.registro-fb {
+    display: inline-block;
+    color: azure;
+    background-color: blue;
+    margin: 10px;
+    padding: 3px;
+}
+
+.first-section {
+    color: gray;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.info {
+    color: rgb(119, 115, 115);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.nombre {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.apellido {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.info-login {
+    color:rgb(119, 115, 115);
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.mail {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.contraseña {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.confirmacion {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.account p {
+    display: inline-block;
+    margin-left: 500px;
+    padding: 5px;
+    color: grey;
+    margin-top: 10px;
+    border: 1px solid rgb(119, 115, 115)
+}
+
+
+.img-insta {
+    margin-top: 5px;
+    max-height: 20px;
+    max-width: 20px;
+}
+
+.img-face {
+    margin-top: 5px;
+    max-width: 20px;
+    max-height: 25px;
+}
+
+/* PAGINA PREGUNTAS FRECUENTES */
+
+h2 {
+    color: rgb(82, 80, 80);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgb(202, 198, 198);
+}
+
+.preguntas ul {
+    display: flex;
+    justify-content: space-around;
+}
+.pagos {
+    /* margin-top: 40px;
+    margin-left: 10px;
+    max-margin-bottom: 20px;
+} */
+
+
+
+.envio {
+    /* text-align: center;
+    margin-top: -25px;
+    margin-left: 600px;
+    margin-right: 450px;
+    list-style-type: none; */
+}
+
+.atencion-cliente {
+    /* text-align: right;
+    margin-top: -25px;
+    margin-left: 1000px;
+    margin-bottom:50px;
+    list-style-type: none;
+     */
+}
+/* IMAGENES */
+
+    
+}
+
+/* Seccion Paragraph */
+
+.first-paragraph {
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.second-paragraph {
+    margin-top: -25px;
+    margin-left: 580px;
+}
+
+.third-paragraph {
+    text-align: right;
+    margin-top: -60px;
+    margin-right: 150px;
+}
+
+/* PAGINA SUCURSALES */
+
+.ubicaciones {
+    display: inline-block;
+}
+.alto-comahue {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.paseo-patag {
+    display: inline-block;
+    margin-top: -10px;
+    margin-left: 400px;
+    margin-bottom: 100px;
+}
+
+.portal {
+    margin-top: -125px;
+    margin-left: 1150px;
+    margin-right: 10px;
+    margin-bottom: 100px; 
+}
+
+
+/* PAGINA CONTACTO */
+
+.whatsapp {
+    margin-left: 5px;
+    margin-right: 60px;
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.chat {
+    margin-left: 80px;
+    margin-right: 70px;
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.mail {
+    margin-left: 80px;
+    margin-right: 60px;
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.telefono {
+    margin-left: 80px;
+    margin-right: 10px;
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.ubicacion {
+    margin-left: 120px;
+    margin-right: 5px;
+    max-width: 10%;
+    max-height: 10%;
+}
+
+.formulario-second ul{
+    display: flex; 
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.formulario-second li {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+
+/* PAGINA BOTON ARREPENTIMIENTO */
+.formulario ul {
+    display: flex; 
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.formulario li {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+/* PAGINA CONTACTO */
+.forma-contacto {
+    text-align: right;
+    
+
+}
+.titulo{
+    text-align: right;
+    
+}
+
+.whatsapp {
+    display: flex;
+    width: 4%;
+    height: 4%;
+    float: right;
+}
+
+
+
+body {
+    font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
+    font-size: 12px
+
+
+    d6d6d6
