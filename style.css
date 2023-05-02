@@ -38,14 +38,6 @@ h1 {
     height: 15%;
 }
 
-/* .second-menu, li{
-    color: black;
-    text-shadow: 0 0 8px rgb(255, 255, 255);
-    display: flex;
-    justify-content: right;
-    margin-right: 30px;
-    list-style: none;
-} */ */
 /* Fin menu navegable */
 
 /* Seccion Carrucel */
@@ -68,7 +60,6 @@ h1 {
  /* Fin Carrucel */
 
 /* GALERIA*/
-
 .galeria {
     font-family: 'Open Sans', sans-serif;
 }
@@ -77,10 +68,6 @@ h1 {
     text-align: center;
     margin: 20px 0 15px 0;
     font-weight: 300;
-}
-
-.linea {
-    
 }
 
 .contenedor-imagenes{
@@ -316,69 +303,6 @@ h1 {
     max-height: 25px;
 }
 
-/* PAGINA PREGUNTAS FRECUENTES */
-
-h2 {
-    color: rgb(82, 80, 80);
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: rgb(202, 198, 198);
-}
-
-.preguntas ul {
-    display: flex;
-    justify-content: space-around;
-}
-.pagos {
-    /* margin-top: 40px;
-    margin-left: 10px;
-    max-margin-bottom: 20px;
-} */
-
-
-
-.envio {
-    /* text-align: center;
-    margin-top: -25px;
-    margin-left: 600px;
-    margin-right: 450px;
-    list-style-type: none; */
-}
-
-.atencion-cliente {
-    /* text-align: right;
-    margin-top: -25px;
-    margin-left: 1000px;
-    margin-bottom:50px;
-    list-style-type: none;
-     */
-}
-/* IMAGENES */
-
-    
-}
-
-/* Seccion Paragraph */
-
-.first-paragraph {
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 5px;
-}
-
-.second-paragraph {
-    margin-top: -25px;
-    margin-left: 580px;
-}
-
-.third-paragraph {
-    text-align: right;
-    margin-top: -60px;
-    margin-right: 150px;
-}
 
 /* PAGINA SUCURSALES */
 
@@ -467,19 +391,16 @@ form {
   }
 
 .formulario p {
-    font-family: 'Inter', sans-serif;
     font-family: 'Roboto Slab', serif;
-
 }
+
 /* PAGINA CONTACTO */
 .forma-contacto {
     text-align: right;
     
-
 }
 .titulo{
-    text-align: right;
-    
+    text-align: right; 
 }
 
 .whatsapp {
@@ -494,6 +415,17 @@ form {
 body {
     font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
     font-size: 12px
+}
 
 
-    d6d6d6
+/* PAGINA INSPIRACIONES */
+.paragraph-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+.paragraph-title h2 {
+    
+}
