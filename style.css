@@ -429,3 +429,49 @@ body {
 .paragraph-title h2 {
     
 }
+
+@media only screen and (max-width: 900px)
+.containter-items {
+    display: block;
+}
+
+@media only screen and (max-width: 1024px) 
+.item{
+        flex-direction: column;
+}
+
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+figure {
+    width: 69%;
+    height: auto;
+}
+
+.info-producto {
+    width: 30%;
+}
+
+.info-producto h1 {
+    font-size: 3em ;
+    line-height: 1em;
+    text-align: center ;
+    margin: 10px 0;
+}
+
+.info-producto p {
+    text-align: center;
+}
+
+.info-producto h1 {
+    font-size: 3em ;
+    line-height: 1em;
+    text-align: center ;
+    margin: 10px 0;
+}
