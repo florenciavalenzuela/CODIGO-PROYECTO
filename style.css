@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #f7f6f4;
-    background-image: url(../proyecto/img-index/WhatsApp\ Image\ 2023-04-05\ at\ 00.40.53.jpeg);
+    background-color: #fff;
+    /* background-image: url(../proyecto/img-index/WhatsApp\ Image\ 2023-04-05\ at\ 00.40.53.jpeg); */
     background-attachment: fixed;
     background-size: cover;
 }
@@ -27,9 +27,7 @@ h1 {
 
 /* Menu navegable */
 .first-menu {
-    
     display: flex;
-    
     list-style: none;
 } 
 
@@ -37,7 +35,6 @@ h1 {
     margin: 5px 10px 20px 10px;
     height: 15%;
 }
-
 /* Fin menu navegable */
 
 /* Seccion Carrucel */
@@ -130,103 +127,110 @@ h1 {
         width: 48%;
     }
 }
+/* FIN GALERIA */
 
-
-
-/* Pie de pagina */
-
-/* Seccion redes */
-
+/* PIE DE PAGINA*/
 #contenedor-footer {
     background-color: rgb(172,167,167);
     padding: 0;
 }
+/* FIN PIE DE PAGINA */
 
 
-
-
-
-
-.redes{
-    background-color: rgb(172, 167, 167);
-}
-.redes p  {
-    color: rgb(82, 80, 80);
-    font-weight: bold;
-    text-align: left;
-    margin-top: 100px;
-    margin-left: 10px;
-    margin-right: 0px;
-}
-
-.redes li {
+/* PAGINA INSPIRACIONES */
+.paragraph-title {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 15px;
-    margin-right: 10px;
-    list-style-type: none; 
-}
-
-/* Seccion ayuda */
-.ayuda {
-    text-align: left;
-    margin-left: 280px;
-    margin-top: -90px;  
-}
-
-.ayuda p {
-    color: rgb(82, 80, 80);
-    font-weight: bold; 
-}
-
-.ayuda li {
-    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-left: -50px;
-    list-style-type: none; 
+    margin: 50px 0;
 }
 
-.ayuda a {
-    color: rgb(110, 110, 110);
-    text-decoration: none;
+@media only screen and (min-width: 1281px) {
+    .container-items {
+        margin-left: auto;
+        margin-right: auto;
+        width: 84%;
+    }
 }
 
-/* Seccion Logo */
-.logo {
-    color: rgb(82, 80, 80);
-    font-weight: bold;
-    text-align: center;
-    background-color: rgb(172, 167, 167);
-    margin-bottom: 20px;
+@media only screen and (max-width: 900px) {
+    .containter-items {
+    display: block;
+    }
 }
 
-/* Seccion Nosotros */
-.nosotros {
-    background-color: rgb(172, 167, 167);
-    margin-left: 10px;
-    text-align: right;
-    margin-top: -130px;
+@media only screen and (max-width: 1024px) {
+    .item{
+        flex-direction: column;
+    }
 }
 
-.nosotros p {
-    color: rgb(82, 80, 80);
-    font-weight: bold;
-    margin-right: 60px;
-}
-.nosotros li {
+.item {
     display: flex;
-    justify-content: flex-end;
-    text-align: justify;
-    align-items: flex-start;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 50px;
 }
 
-.nosotros a {
-    color: rgb(110, 110, 110);
-    text-decoration: none;
+figure {
+    width: 69%;
+    height: auto;
 }
 
+.info-producto {
+    width: 30%;
+}
 
+.info-producto h1 {
+    font-size: 3em ;
+    line-height: 1em;
+    text-align: center ;
+    margin: 10px 0;
+}
+
+.info-producto h2 {
+    font-family: 'Konkhmer Sleokchher', cursive;
+    color: rgb(3, 3, 3);
+}
+
+.info-producto p {
+    text-align: center;
+}
+
+/* FIN PAGINA INSPIRACIONES */
+
+
+
+
+
+
+/* PAGINA BOTON ARREPENTIMIENTO */
+
+form {
+    /* Centrar el formulario en la página */
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+  }
+
+.formulario p {
+    font-family: 'Roboto Slab', serif;
+}
+/* FIN PAGINA BOTON DE ARREPENTIMIENTO */
+
+
+
+
+
+
+
+
+/* PAGINAS VIEJAS */
 /* Pagina de Registro */
 
 .registro-fb {
@@ -377,23 +381,6 @@ h1 {
     margin-left: 2%;
 }
 
-
-/* PAGINA BOTON ARREPENTIMIENTO */
-
-form {
-    /* Centrar el formulario en la página */
-    margin: 0 auto;
-    width: 400px;
-    /* Esquema del formulario */
-    padding: 1em;
-    border: 1px solid #CCC;
-    border-radius: 1em;
-  }
-
-.formulario p {
-    font-family: 'Roboto Slab', serif;
-}
-
 /* PAGINA CONTACTO */
 .forma-contacto {
     text-align: right;
@@ -410,68 +397,7 @@ form {
     float: right;
 }
 
-
-
 body {
     font-family: "Helvetica Neue","Helvetica","Arial","sans-serif";
     font-size: 12px
-}
-
-
-/* PAGINA INSPIRACIONES */
-.paragraph-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 50px 0;
-}
-.paragraph-title h2 {
-    
-}
-
-@media only screen and (max-width: 900px)
-.containter-items {
-    display: block;
-}
-
-@media only screen and (max-width: 1024px) 
-.item{
-        flex-direction: column;
-}
-
-
-.item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 50px;
-}
-
-figure {
-    width: 69%;
-    height: auto;
-}
-
-.info-producto {
-    width: 30%;
-}
-
-.info-producto h1 {
-    font-size: 3em ;
-    line-height: 1em;
-    text-align: center ;
-    margin: 10px 0;
-}
-
-.info-producto p {
-    text-align: center;
-}
-
-.info-producto h1 {
-    font-size: 3em ;
-    line-height: 1em;
-    text-align: center ;
-    margin: 10px 0;
 }
