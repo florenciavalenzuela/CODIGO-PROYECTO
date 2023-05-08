@@ -19,10 +19,14 @@ html {
 
 /* Cabecera de la Web */
 /* Logo*/
-h1 {
+.logo-header h1 {
     text-align: center;
     color:black;
     text-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+.logo-header a {
+    text-decoration: none;
 }
 
 /* Menu navegable */
