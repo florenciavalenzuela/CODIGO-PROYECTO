@@ -8,7 +8,7 @@
 }
 
 .contenedor-imagenes {
-    @include flexible (flex , space-around  , none , wrap , none );
+    @include flexible (flex , space-around  , row, wrap , none );
 
 }
 

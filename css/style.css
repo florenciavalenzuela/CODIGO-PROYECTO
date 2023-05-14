@@ -171,7 +171,7 @@ body {
 .contenedor-imagenes {
   display: flex;
   justify-content: space-around;
-  flex-flow: none wrap;
+  flex-flow: row wrap;
   align-items: none;
 }
 
