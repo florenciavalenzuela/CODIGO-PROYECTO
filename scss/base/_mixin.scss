@@ -1,0 +1,58 @@
+/*MIXIN PARA FLEX*/
+@mixin flexible ($dis, $just , $direction , $corte, $align){
+    display: $dis;
+    justify-content: $just;
+    flex-flow: $direction  $corte;
+    align-items: $align;
+    
+}
+
+.contenedor-imagenes {
+    @include flexible (flex , space-around  , none , wrap , none );
+
+}
+
+
+
+/*PAG INSPIRACIONES*/
+
+.paragraph-title {
+    @include flexible(flex, center , column , nowrap , center);
+   
+}
+
+
+.item {
+    @include flexible(flex , space-between , row , wrap, center );
+    
+}
+
+
+/*PAGINA SUCURSALES*/
+
+.ubicaciones {
+    @include flexible(flex , space-between , row , wrap , none )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
