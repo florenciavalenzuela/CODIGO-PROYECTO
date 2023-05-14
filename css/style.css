@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Nesting o anidamiento 
 Nos ayuda a ver de una manera mas visual la cascada de html*/
 * {
@@ -125,11 +124,10 @@ figure .picture {
 }
 
 /* FIN PAGINA INSPIRACIONES */
------------------------------------------ form {
-  /* Centrar el formulario en la página */
+/* Pagina Boton Arrepentimiento*/
+form {
   margin: 0 auto;
   width: 400px;
-  /* Esquema del formulario */
   padding: 1em;
   border: 1px solid #CCC;
   border-radius: 1em;
