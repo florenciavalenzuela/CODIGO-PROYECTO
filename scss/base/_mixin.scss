@@ -13,7 +13,6 @@
 }
 
 
-
 /*PAG INSPIRACIONES*/
 
 .paragraph-title {
@@ -31,13 +30,39 @@
 /*PAGINA SUCURSALES*/
 
 .ubicaciones {
-    @include flexible(flex , space-between , row , wrap , none )
+    @include flexible(flex , space-between , row , wrap , none );
 }
 
 
 
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;    
+}
+
+/*Pag Index*/
+
+.contenedor-imagenes .imagen{
+    @include sizes(32%, 250px );
+ }
+
+.imagen img {
+   @include sizes(100%,100% );
+}
+
+.imagen:hover .overlay {
+    @include sizes(100%,100% );
+
+}
 
 
+/*Pagina Inspiraciones*/
+figure {
+    @include sizes(69%,auto );
+    .picture{
+        @include sizes(100%,auto );
+    }
+}
 
 
 

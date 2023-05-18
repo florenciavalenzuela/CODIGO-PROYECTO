@@ -57,14 +57,10 @@ Nos ayuda a ver de una manera mas visual la cascada de html*/
   border-radius: 3px;
 }
 .galeria .contenedor-imagenes .imagen {
-  width: 32%;
   position: relative;
-  height: 250px;
   margin-bottom: 5px;
 }
 .galeria .contenedor-imagenes .imagen img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 .galeria .contenedor-imagenes .imagen .overlay {
@@ -72,7 +68,6 @@ Nos ayuda a ver de una manera mas visual la cascada de html*/
   bottom: 0px;
   left: 0px;
   background-color: none;
-  width: 100%;
   transition: 0.5s ease;
   overflow: hidden;
 }
@@ -84,7 +79,6 @@ Nos ayuda a ver de una manera mas visual la cascada de html*/
 }
 
 .imagen:hover .overlay {
-  height: 100%;
   cursor: pointer;
 }
 
@@ -95,15 +89,6 @@ Nos ayuda a ver de una manera mas visual la cascada de html*/
 
 .item {
   margin-bottom: 50px;
-}
-
-figure {
-  width: 69%;
-  height: auto;
-}
-figure .picture {
-  width: 100%;
-  height: auto;
 }
 
 .info-producto {
@@ -124,7 +109,6 @@ figure .picture {
 }
 
 /* FIN PAGINA INSPIRACIONES */
-/* Pagina Boton Arrepentimiento*/
 form {
   margin: 0 auto;
   width: 400px;
@@ -132,37 +116,26 @@ form {
   border: 1px solid #CCC;
   border-radius: 1em;
 }
-
-.formulario p {
+form .formulario p {
   font-family: "Roboto Slab", serif;
 }
 
-/* FIN PAGINA BOTON DE ARREPENTIMIENTO */
-/* PAGINA SUCURSALES */
 .sucursales {
   padding: 2%;
 }
-
 .sucursales h2 {
   display: block;
   text-align: center;
 }
-
-.ubicaciones {
+.sucursales .ubicaciones {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.mapa p {
-  font-family: "Roboto Slab", serif;
+.sucursales .ubicaciones .mapa p {
+  font-family: "Konkhmer Sleokchher";
   text-align: center;
   font-size: 20px;
-}
-
-body {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-  font-size: 12px;
 }
 
 /*MIXIN PARA FLEX*/
@@ -194,6 +167,32 @@ body {
   justify-content: space-between;
   flex-flow: row wrap;
   align-items: none;
+}
+
+/*Pag Index*/
+.contenedor-imagenes .imagen {
+  width: 32%;
+  height: 250px;
+}
+
+.imagen img {
+  width: 100%;
+  height: 100%;
+}
+
+.imagen:hover .overlay {
+  width: 100%;
+  height: 100%;
+}
+
+/*Pagina Inspiraciones*/
+figure {
+  width: 69%;
+  height: auto;
+}
+figure .picture {
+  width: 100%;
+  height: auto;
 }
 
 /* INDEX */
